@@ -35,11 +35,12 @@ connection repair and air selection. Install geo's `legacy` extra for these.
 
 ## Development and releases
 
-The extraction requires the companion core checkout containing the shared
-`blockstates`, `validation`, `entity_positions` and legacy data helpers. Install
-both local projects together as shown in the README. The currently published
-core 0.6.0 does not contain this migration. Coordinate the next core/geo releases
-and downstream version bounds before publishing packages to PyPI.
+Geo 0.1.0 requires core >=0.6.1,<0.7. The minimum version contains the
+shared data helpers used by this package; core 0.6.0 is not supported. Install
+both local checkouts or their built wheels while preparing the release.
+Publish core 0.6.1 before geo 0.1.0. Current render/edit dependency ranges already
+accept core 0.6.1. Core's [migration notes](https://github.com/kirimba1024/structura-core/blob/main/docs/migration-0.6.1.md)
+list the API changes explicitly.
 
 The useful geometry tests move with their implementation, including the parent
 workspace's aesthetic tests. Core retains conversion and preservation coverage.

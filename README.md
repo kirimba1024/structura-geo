@@ -7,12 +7,15 @@ The dependency points from geo to core. Core does not require geo or SciPy.
 
 ## Development installation
 
-This initial extraction uses the current companion `structura-core` source.
-Until that core revision is released, install both checkouts together:
+Geo 0.1.0 requires core >=0.6.1,<0.7. Install both local checkouts together
+while preparing the paired release:
 
 ```bash
 python -m pip install -e ./libs/structura-core -e ./libs/structura-geo
 ```
+
+After core 0.6.1 and geo 0.1.0 are published, `pip install structura-geo`
+resolves the supported core version automatically.
 
 ## Analysis
 

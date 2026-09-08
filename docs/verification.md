@@ -2,7 +2,7 @@
 
 Checked on 2026-09-08 with Python 3.9.6, NumPy 1.26.4 and SciPy 1.13.1.
 
-- Core: 238 tests passed from source and from the installed wheel.
+- Core 0.6.1: 246 tests passed from source and from the installed wheel.
 - Geo: 47 tests passed from source and from the installed wheel, including
   component/room metrics, sparse geometry, morphology, aesthetics and legacy
   placement preparation.
@@ -14,5 +14,8 @@ Checked on 2026-09-08 with Python 3.9.6, NumPy 1.26.4 and SciPy 1.13.1.
   list has no SciPy or geo requirement.
 - The analysis benchmark completed dense, sparse and distant-coordinate inputs.
 
-These checks validate the local companion core revision. They do not establish
-compatibility with the currently published core wheel; see [migration](migration.md).
+Fresh base installation also passed 189 core tests with 50 optional-translation
+skips; geo without its legacy extra passed 46 tests with one skip. Upgrading from
+the previous core build through geo's dependency selected core 0.6.1, retained
+the analysis commands and passed `pip check`. The minimum core requirement
+excludes 0.6.0. See [migration](migration.md) for release order.

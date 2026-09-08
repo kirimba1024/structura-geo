@@ -8,10 +8,10 @@ version = "0.1.0"
 description = "Minecraft structure geometry, room and material metrics, and placement preparation"
 readme = "README.md"
 requires-python = ">=3.9"
-dependencies = ["structura-core>=0.6,<0.7", "numpy>=1.26,<3", "scipy>=1.13,<2"]
+dependencies = ["structura-core>=0.6.1,<0.7", "numpy>=1.26,<3", "scipy>=1.13,<2"]
 
 [project.optional-dependencies]
-legacy = ["structura-core[legacy]>=0.6,<0.7"]
+legacy = ["structura-core[legacy]>=0.6.1,<0.7"]
 test = ["pytest>=8,<9", "ruff"]
 
 [project.scripts]
